@@ -2,7 +2,6 @@ import math
 import glob
 import pandas as pd
 from scipy import stats
-import math
 
 all_files = glob.glob("../data/microdata-enem-2016/part-*")
 frame = pd.concat((pd.read_csv(f, header=-1)
