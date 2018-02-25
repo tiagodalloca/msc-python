@@ -3,7 +3,7 @@ import glob
 import pandas as pd
 from scipy import stats
 
-all_files = glob.glob("../data/microdata-enem-2016/part-*")
+all_files = glob.glob("./microdata-enem-2016/part-*")
 frame = pd.concat((pd.read_csv(f, header=-1)
                    for f in all_files))
 
